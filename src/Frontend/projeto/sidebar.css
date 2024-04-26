@@ -1,0 +1,512 @@
+/* Inicio nav-bar */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+*:focus{
+    outline: none;
+}
+
+body{
+    width: 100%;
+    background-color: #fafafa;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+}
+
+.menu-principal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    border-bottom: 1px solid #dfdfdf;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.menu-links{
+    width: 100%;
+    max-width: 1500px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logteste{
+    width: 15%;
+}
+
+.busca-topo{
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 35px;
+    background-color: #eee;
+    border: 1px solid #f7f7f7;
+    border-radius: 5px;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.busca-topo::placeholder{
+    color: rgb(194, 187, 187);
+}
+
+.menu-icones{
+    height: 22px;
+    position: relative;
+}
+
+.icon{
+    height: 100%;
+    cursor: pointer;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.perfil-usuario{
+    width: 23px;
+    border-radius: 50%;
+    background-size: cover;
+}
+/* Fim nav bar */
+
+/* Inicio da sidebar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: #fff;
+}
+
+main {
+    width:80%;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    height: 100%;
+    border-radius: 0px 18px 18px 0px;
+    position: relative;
+    transition: all .5s; /*para a animação do side bar não abrir tão bruscamente*/
+    min-width: 82px; /*Para que a transição funcione devemos colocar uma largura*/
+}
+
+.sidebar-conteudo {
+    padding: 12px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 24px;
+    justify-content: center;
+}
+
+.informação-do-usuario {
+    display: flex;
+    flex-direction: column;
+}
+
+.user_avatar {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.informação-do-usuario span:last-child {
+    color: #6b6b6b;
+    font-size: 12px;
+}
+
+.items-sdb {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style: none;
+}
+
+.items-sidebar{
+    border-radius: 8px;
+    padding: 14px;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+.items-sidebar.active{
+    background-color:#64b3cc;
+}
+
+.items-sidebar:hover:not(.active),
+.logout_btn:hover {
+    background-color: #e3eef7;
+}
+
+
+.items-sidebar a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.items-sidebar.active a{
+    color: #fff;
+}
+
+.items-sidebar a i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:20px;
+    height: 20px;
+}
+
+.logout{
+    align-items: ce;
+}
+
+.logout_btn{
+    border: none;
+    padding: 12px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    background-color: transparent;
+    width: 100%;
+    border-radius: 0px 0px 18px 0px;
+}
+
+#open_btn{
+    position: absolute;
+    top: 100px;
+    right: -15px;
+    background-color: #64b3cc;
+    color: #fff;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#abrir_btn_icon{
+    transition: trasnform 3s;
+}
+
+.open-sidebar #abrir_btn_icon{
+    transform: rotate(180deg);
+}
+
+.items-description{
+    width: 0px;
+    overflow: hidden; /*Para que as descrições não aparecção*/
+    white-space: nowrap; /*Para que ase o texto for muito grande ele não quebrar*/
+    text-overflow: ellipsis; /*Caso o texto seja muito grande, entender melhor*/
+    font-size: 14px;
+    transition: width.6s;
+}
+
+.sidebar.open-sidebar{
+    margin-top: 40;
+    min-width: 15%;
+}
+
+.sidebar.open-sidebar .items-description{
+    width: 150px;
+    
+}
+
+.sidebar.open-sidebar .items-sidebar a{
+    justify-content: flex-start;
+    gap: 14px;
+}
+
+/* Final da SideBar */
+
+/* Inicio sories */
+
+.coluna-esquerda {
+    width: 100%;
+    padding: 20px 0;
+    display: grid;
+    grid-gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin: 100px;
+    background-color: #fff;
+}
+
+.conteudo-geral2{
+    width: -20%;
+    display: grid;
+    grid-gap: -10px;
+    align-items: start;
+    justify-content: start;
+    margin-top: 150px;
+    background-color: #fff;
+}
+
+
+.status-destaques{
+    width: 100%;
+    height: 120px;
+    background-color: #fff;
+    border: 1px, #dfdfdf;
+    border-radius: 2px;
+    padding-right: 0px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    overflow-x: auto;
+}
+.status-destaques::-webkit-scrollbar{
+    display: none;
+}
+.item-destaques{
+    flex: 0 0 auto;
+    width: 100px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 15px;
+}
+.miniaturaperfil{
+    width: 60px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 3px;
+    background:linear-gradient(45deg, #fff ,#64b3cc 80%);
+}
+.miniaturaperfil img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+.nome-do-usuario{
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 5px;
+    color: rgba(0, 0, 0, 0.5);
+}
+/* Fim stories */
+
+/* Inicio publicações */
+
+.postagem{
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    border: 1px #dfdfdf; 
+    margin: 20px 0;
+    align-items: center;
+    padding: 20px; /* Adicionado: para espaçamento interno */
+}
+
+.informacoes{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border: 1px #dfdfdf; 
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.informacoes .nome-do-usuario{
+    width: auto;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.informacoes .opcoes{
+    width: 10px;
+    cursor: pointer;
+}
+
+.informacoes .usuario{
+    display: flex;
+    align-items: center;
+}
+
+.informacoes .miniaturaperfil{
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    background-color: none;
+}
+
+.informacoes .miniaturaperfil img{
+    border: none;
+    max-width: 100%; /* Adicionado: para imagens responsivas */
+}
+
+.capa-post{
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Para fazer com que a imagem se adapte ao border */
+    max-width: 100%; /* Adicionado: para imagens responsivas */
+}
+
+.conteudo-da-postagem{
+    width: 100%;
+    padding: 10px;  
+}
+
+.curtidas{
+    font-weight: bold;
+}
+
+.descricao{
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.span{
+    color:rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    margin-right: 1px;
+}
+
+.tempo-post{
+    color:rgba(0, 0, 0, 0.5) ;
+    font-size: 12px;
+}
+
+.comentario-msg{
+    width: 80%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font: 14px;
+}
+
+.comentario-msg .icon{
+    width: 100px;
+    height: 5px;
+    margin: 0;
+    margin-right: 20px;
+}
+
+.comentario-postagem{
+    width: 100%;
+    height: 50px;
+    border-radius: 1px #dfdfdf;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comentario-btn{
+    width: 70px;
+    height: 100%;
+    background:none;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    color:#64b3cc ;
+    opacity: 0.5;
+}
+
+.reacoes-icones{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    margin-top: -20px;
+    align-items: center;
+}
+
+.reacoes-icones .icon{
+    height: 25px;
+    margin: 0;
+    margin-right: 40px;
+}
+
+.reacoes-icones .icon.salvar{
+    margin-left: auto;
+}
+
+/* Fim publicações */
+
+/* Media Queries para Responsividade */
+
+/* Media query para telas menores que 768px (tablets e smartphones em modo paisagem) */
+@media only screen and (max-width: 768px) {
+    .menu-principal {
+        height: 60px;
+    }
+
+    .busca-topo {
+        width: 200px;
+    }
+
+    .sidebar {
+        min-width: 50px;
+    }
+
+    .informacoes .nome-do-usuario {
+        font-size: 12px;
+    }
+
+}
+
+/* Media query para telas menores que 480px (smartphones em modo retrato) */
+@media only screen and (max-width: 480px) {
+    .busca-topo {
+        width: 150px;
+    }
+
+    .sidebar {
+        min-width: 30px;
+    }
+
+    .informacoes .nome-do-usuario {
+        font-size: 10px;
+    }
+
+
+}
+
+
+
